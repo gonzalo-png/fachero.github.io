@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/plantitas/plantitas.png);
+    background-color: yellow;
+    background-attachment: fixed;
+}
+.navbar-brand{
+    background-image: url(../img/logo/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {opacity: 0;}
+
+.colortxbarra{
+    font-weight: bold;
+    color: black !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+h3,h2{
+    color: aliceblue;
+    font-weight: bold;
+}
+h3{    
+    font-size: xx-large;
+}
+.futpaimg{
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+#plantitas{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+}
+.pichincho1{
+    margin-top: 100px ;
+    width: 800px;
+    height: 800px;
+    background-image: url(../img/plantitas/hojitas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: plantita1 7s ease-in-out infinite;
+}
+.pichincho2{
+    margin-top: 100px ;
+    width: 800px;
+    height: 800px;
+    background-image: url(../img/plantitas/hojitasx.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: plantita2 7s ease-in-out infinite;
+}
+@keyframes plantita1{
+    0%{
+        transform: rotateZ(20deg);
+    }
+    50%{
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        transform: rotateZ(20deg);
+    }
+}
+@keyframes plantita2{
+    0%{
+        transform: rotateZ(-20deg);
+    }
+    50%{
+        transform: rotateZ(20deg);
+    }
+    100%{
+        transform: rotateZ(-20deg);
+    }
+}
+
+.animal_modal{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    align-items: end;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.767));
+}
+
+.btn-close{
+    background-color: aliceblue;
+    margin-right: 20px;
+}
+
+
+
+.pmodal{
+    color: aliceblue;
+    margin-left: 40px ;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.prtex{
+    margin-top: 40px;
+}
+
+.animaldia{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 40px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+
+
+#pre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+.tex{
+    display: none;
+}
+
+@keyframes aparicion{
+    0%{
+    color:rgba(240, 248, 255, 0);
+    width: 0px;
+    height: 0px;
+    }
+    60%{
+    width: 400px;
+    height: 400px;
+    color:rgba(240, 248, 255, 0);
+    }
+    80%{
+        color:rgba(240, 248, 255, 0);   
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+@keyframes aparicion_mini{
+    0%{
+    color:rgba(240, 248, 255, 0);
+    width: 0px;
+    height: 0px;
+    }
+    60%{
+    width: 200px;
+    height: 200px;
+    color:rgba(240, 248, 255, 0);
+    }
+    80%{
+        color:rgba(240, 248, 255, 0);   
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+
+
+.textote{
+    padding: 20px;
+}
+.one{
+    margin-left: 400px ;
+}
+.two{
+    margin-right: 400px;
+}
+.flechita{
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/plantitas/flechita.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(20px 20px 10px black);
+}
+#textlocura{
+    display: none;
+}
+#textolocura:target{
+display: grid;
+width: 100%;
+justify-content:center;
+justify-items: center;
+}
+
+@keyframes pirulo{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.gal{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.iconos{
+    height: 100px;
+    width: 100px;
+    transition: 0.3s;
+}
+.iconos:hover{
+    height: 90px;
+    width: 90px;
+}
+.marqui{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconospe{
+    display: block;
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: aliceblue;
+    transition: 0.3s;
+}
+.iconospe:hover{
+    background-color: yellow;
+    border-color: yellow;
+}
+.palosiconos{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    animation: inicio 2s;
+}
+form{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5%;
+    border-style:solid ;
+}
+.mundito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(207, 207, 1);
+    background-image: url(../img/plantitas/plantitas.png);
+}
+.palosdatos{
+    padding: 15px;
+}
+.pafotitos{    
+    width: 245px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.truchitovideito:hover{
+    border-color: yellow;
+
+}
+
+.fachitamano{
+    background-color: black;
+    color: aliceblue;
+    font-weight: bolder;
+    border: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    animation: inicio 2s;
+}
+.fachitamano:hover{
+    background-color: yellow;
+    color: black;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.tutele{
+    background-color: black;
+}
+.mundi{
+    margin-top: 20px;
+    filter: drop-shadow(10px 10px 5px black);
+}
+@keyframes inicio{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@media (max-width:1920px) {
+    #plantitas{
+        display: none;
+    }
+}
+@media (max-width:991px) {
+    .colorcasillabarra{
+        margin-left: 50px;
+        transition: 0.4s;
+    }
+    .colorcasillabarra:hover .colortxbarra{
+        color: yellow !important;
+        transition: 0.5s;
+    }
+}
+
+@media (min-width:992px) {
+    .colorcasillabarra{
+        margin-left: 50px;
+        transition: 0.4s;
+    }
+    .colorcasillabarra:hover .colortxbarra{
+        background-color: rgba(0, 0, 0, 0.514);
+        color: yellow !important;
+        transition: 0.5s;
+    }
+}
+@media (max-width:1675px){
+    .animal{
+        margin-top: 40px;
+    }
+}
+@media (max-width:826px){
+    .one{
+        margin-left: 0px ;
+    }
+    .two{
+        margin-right: 0px;
+    }
+}
+@media (min-width:681px){
+    #quienes{
+        background-image: url(../img/pre/quienes.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height:283px;
+        width: 571px;
+        filter: drop-shadow(20px 20px 5px black);
+        animation: inicio 2s;
+        }
+        #somos{
+            background-image: url(../img/pre/somos.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            height:284px;
+            width: 569px;
+            margin-top: -1px;
+            filter: drop-shadow(20px 20px 10px black);
+            animation: inicio 2s;
+        }
+        #textolocura:target .tex{
+            border: 7px;
+            background-color: black;
+            border-radius: 50%;
+            border-style:solid;
+            border-color: aliceblue;
+            width: 400px;
+            height: 400px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: aliceblue;
+            font-size: 30px;
+            font-weight: bold;
+            filter: drop-shadow(20px 20px 10px black);
+            animation: aparicion 2s;
+        }
+        .trucho{
+            width:330px;
+            height:185px;
+            animation: pirulo 2s;
+        }
+        .truchitovideito{
+            width: 510px;
+            height: 300px;
+            border: 7px;
+            border-style: solid;
+            border-color: aliceblue;
+            margin: 30px;
+            transition: 0.3s;
+            animation: inicio 2s;
+        }
+        #camaleon{
+            background-image: url(../img/tarjetas/camaleon/camaleon_img.png);
+        }
+        #hipopotamos{
+            background-image: url(../img/tarjetas/hipopotamos/hipopotamos_img.png);
+        }
+        #osopolar{
+            background-image: url(../img/tarjetas/osopolar/osopolar_img.png);
+        }
+        #osopanda{
+            background-image: url(../img/tarjetas/panda/panda_img.png);
+        }
+        .animal{
+            width: 350px;
+            height: 600px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items:end;
+            transition: 0.5s;    
+            border: 2px;
+            border-style: solid;
+            border-color: aliceblue;
+            animation: inicio 2s;
+        }
+        .animal:hover{
+            border: 10px;
+            border-style: solid;
+            border-color: yellow;
+        }
+        h2{
+            font-size: 50px;
+        }
+        .poppamodal{
+            margin-left: 20px;
+        }
+        .vieiyos{
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            flex-wrap: wrap;
+            z-index: 2;
+        }
+        .pasec{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.925);
+            padding: 60px;
+        }
+        .mono1{
+            padding: 20px;
+            margin: 20px;
+            animation: inicio 2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mono2{
+            padding: 20px;
+            margin: 20px;
+            animation: inicio 3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mono3{
+            padding: 20px;
+            margin: 20px;
+            animation: inicio 4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+}
+@media (max-width:680px){
+    #quienes{
+        background-image: url(../img/pre/quienes_mini.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height:150px;
+        width: 300px;
+        filter: drop-shadow(20px 20px 5px black);
+        animation: inicio 2s;
+        }
+        #somos{
+            background-image: url(../img/pre/somos_mini.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            height:150px;
+            width: 300px;
+            margin-right: 2px;
+            filter: drop-shadow(20px 20px 10px black);
+            animation: inicio 2s;
+        }
+        #textolocura:target .tex{
+            border: 7px;
+            background-color: black;
+            border-radius: 50%;
+            border-style:solid;
+            border-color: aliceblue;
+            width: 200px;
+            height: 200px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: aliceblue;
+            font-size: 14px;
+            font-weight: bold;
+            filter: drop-shadow(20px 20px 10px black);
+            animation: aparicion_mini 2s;
+        }
+        .trucho{
+            width:190px;
+            height:190px;
+            border-radius: 50%;
+            animation: pirulo 2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .truchitovideito{
+            width: 270px;
+            height: 160px;
+            border: 7px;
+            border-style: solid;
+            border-color: aliceblue;
+            margin-top: 30px;
+            transition: 0.3s;
+            animation: inicio 2s;
+        }
+        #camaleon{
+            background-image: url(../img/tarjetas/camaleon/camaleon_mini.png);
+        }
+        #hipopotamos{
+            background-image: url(../img/tarjetas/hipopotamos/hipopotamos_mini.png);
+        }
+        #osopolar{
+            background-image: url(../img/tarjetas/osopolar/osopolar_mini.png);
+        }
+        #osopanda{
+            background-image: url(../img/tarjetas/panda/panda_mini.png);
+        }
+        .animal{
+            width: 300px;
+            height: 510px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items:end;
+            transition: 0.5s;    
+            border: 2px;
+            border-style: solid;
+            border-color: aliceblue;
+            animation: inicio 2s;
+        }
+        .poppamodal{
+            margin-left: 0px;
+        }
+        .vieiyos{
+            display: flex;
+            justify-content: space-around;
+            padding: 0px;
+            flex-wrap: wrap;
+            z-index: 2;
+        }
+        .pasec{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.925);
+            padding: 0px;
+            padding-bottom: 30px;
+        }
+        .mono1{
+            padding: 10px;
+            margin: 10px;
+            animation: inicio 2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mono2{
+            padding: 10px;
+            margin: 10px;
+            animation: inicio 3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mono3{
+            padding: 10px;
+            margin: 10px;
+            animation: inicio 4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mundi{
+            margin-top: 20px;
+            width: 300px;
+            height: 360px;
+        }
+}
+@media (min-width:992px){
+    .patexmodal{
+        height: 100%;
+        width: 50%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.973));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #camaleon_modal{
+        background-image: url(../img/tarjetas/camaleon/camaleon_modal_img.png);
+    }
+    #hipopotamo_modal{
+        background-image: url(../img/tarjetas/hipopotamos/hipopotamos_modal_img.png);
+    }
+    #osopolar_modal{
+        background-image: url(../img/tarjetas/osopolar/osopolar_modal_img.png);
+    }
+    #osopanda_modal{
+        background-image: url(../img/tarjetas/panda/panda_modal_img.png);
+    }
+    .modalmodalfachero{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: linear-gradient(to right,black 0 40%,yellow 40% 100%);
+    }
+}
+@media (max-width:991px){
+    .patexmodal{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.973));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #camaleon_modal{
+        background-image: url(../img/tarjetas/camaleon/camaleon_modal_img.png);
+        background-position-x:-250px;
+    }
+    #hipopotamo_modal{
+        background-image: url(../img/tarjetas/hipopotamos/hipopotamos_modal_img.png);
+        background-position-x:-120px;
+    }
+    #osopolar_modal{
+        background-image: url(../img/tarjetas/osopolar/osopolar_modal_img.png);
+        background-position-x:-200px;
+    }
+    #osopanda_modal{
+        background-image: url(../img/tarjetas/panda/panda_modal_img.png);
+        background-position-x:-200px;
+    }
+    .modalmodalfachero{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        border: 3px;
+        border-color: aliceblue;
+        border-style: solid;
+    }
+}
+@media (max-width:400px){
+    .patexmodal{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.973));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+}
